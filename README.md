@@ -1,7 +1,7 @@
 # Web-Services
-Build a REST-based XML(JSON) WCF web service and a Client to consume the Web Service
-* IDE: Visual Studio
-* Programming Language: c#
+Build a REST-based XML(JSON) WCF Web Service and a Client to consume the Web Service
+* IDE: Visual Studio Community 2015
+* Programming Language: C#
 * Framework: WCF Application
 
 #1. REST-based `XML` WCF Web Service
@@ -70,7 +70,7 @@ public class xxxWebService : xxx
         }//end method2
     }
 ```
-##3) Deploying a REST-based XML WCF web service
+##3) Deploying a REST-based XML WCF Web Service
 * Open `xxxWebService.svc` in browser but don't close it while a client consuming the web service.
 
 ##4) Create a `Client` to consume the REST-based XML WCF web service - using HttpClient and getStringAsync
@@ -80,7 +80,7 @@ public class xxxWebService : xxx
   client.GetStringAsync(new Uri(service/method/parameter)); //method GetStringAsync(send a GET request to the specified URI and return the response body as a string)
 ```
 
-#2. REST-based `JSON` WCF web service
+#2. REST-based `JSON` WCF Web Service
 ##1) Web Service Interface(one place different from XML Web Service)
 ```go
 [OperationContract]
