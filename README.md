@@ -2,7 +2,7 @@
 Build a REST-based XML(JSON) WCF Web Service and a Client to consume the Web Service
 * IDE: Visual Studio Community 2015
 * Programming Language: C#
-* Framework: WCF Application
+* Framework: WCF Service Application
 
 #1. REST-based `XML` WCF Web Service
 ##1) Web Service Interface
