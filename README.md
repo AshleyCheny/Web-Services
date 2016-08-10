@@ -1,5 +1,5 @@
 # Web-Services
-REST-based XML(JSON) WCF web service
+Build a REST-based XML(JSON) WCF web service and a Client to consume the Web Service
 * IDE: Visual Studio
 * Programming Language: c#
 * Framework: WCF Application
@@ -80,7 +80,13 @@ public class xxxWebService : xxx
   client.GetStringAsync(new Uri(service/method/parameter)); //method GetStringAsync(send a GET request to the specified URI and return the response body as a string)
 ```
 
-# REST-based `JSON` WCF web service
+#2. REST-based `JSON` WCF web service
+##1) Web Service Interface(one place different from XML Web Service)
+```go
+[OperationContract]
+[WebGet(ResponseFormat = WebMessageFormat.Json, UriTemplate = "/method1/{Parameter1}/{Parameter2}/{Parameter3}")]
+void method1(string Parameter1, string Parameter2, string Parameter3);
+```
 
-
-
+# Reference Link
+* http://web.csulb.edu/~pnguyen/cecs475/pdf/cshtp5_30.pdf
